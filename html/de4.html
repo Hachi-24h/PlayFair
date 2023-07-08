@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../Css/bootstrap.css">
+    <script src="../JS/jquery-3.6.4.js"></script>
+    <script src="../JS/bootstrap.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <div style="height: 300px; background-color: antiquewhite;">
+
+            </div>
+        </header>
+        <nav>
+            <ul class="nav">
+                <li class="nav-item"><a class="nav-link" href="">Đăng Nhập</a></li>
+                <li class="nav-item"><a class="nav-link" data-toggle="modal" data-target="#form" href="">Mở Tour Mới</a>
+                </li>
+            </ul>
+        </nav>
+        <section style="height: 300px;">
+            <table id="tb" class="table table-bordered">
+                <tbody>
+                    <tr>
+                        <th>STT</th>
+                        <th>Mã Tour</th>
+                        <th>Hành Trình</th>
+                        <th>Ngày Khởi Hành</th>
+                        <th>thời Gian</th>
+                        <th>Giá Tour</th>
+                        <th>Ảnh Đại Diện</th>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+        <footer>
+            <h3 class="text-center">21078341_PhanThanhNam</h3>
+        </footer>
+        <div class="modal" id="form">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+
+                        <h2>Thông Tin Tour</h2>
+                        <button class="btn" data-dismiss="modal">X</button>
+                    </div>
+                    <div class="modal-body">
+                        <form action="">
+                           <!-- Ma -->
+                                <div class="row">
+                                    <label class="col-3 text-right" for="">Mã Tour</label>
+                                    <div class="col-9">
+                                        <input type="text" class="form-control" id="ma"  placeholder="MÃ tour">
+                                        <span id="erma">*</span>
+                                    </div>
+                                </div>
+
+                                <!-- hanh trinh  -->
+                                <div class="row">
+                                    <label class="col-3 text-right" for="">Hanh Trinh</label>
+                                    <div class="col-9">
+                                        <input type="text" class="form-control" id="hanhtrinh" placeholder="Ha Noi toi Long AN">
+                                        <span id="erht">*</span>
+                                    </div>
+                                </div>
+
+                                <!-- ngay  -->
+                                <div class="row">
+                                    <label class="col-3 text-right" for="">Ngay Khoi Hanh</label>
+                                    <div class="col-9">
+                                        <input type="date" class="form-control" id="ngay">
+                                        <span id="erngay">*</span>
+                                    </div>
+                                </div>
+
+                                    <!-- thoi gian -->
+                                <div class="row">
+                                    <label class="col-3 text-right" for="">Thoi Gian</label>
+                                    <div class="col-9">
+                                        <input type="text" class="form-control"  id="thoigian" placeholder="4 nagy 3 dem">
+                                        <span id="ertg">*</span>
+                                    </div>
+                                </div>
+
+                                    <!-- gia tour -->
+                                <div class="row">
+                                    <label class="col-3 text-right" for="">Gia tour</label>
+                                    <div class="col-9">
+                                        <input type="text" class="form-control" id="gia" placeholder="1000000">
+                                        <span id="ergia">*</span>
+                                    </div>
+                                </div>
+
+                                <!-- anhr ddaij dienj  -->
+                                <div class="row">
+                                    <label class="col-3 text-right" for="">Mã Tour</label>
+                                    <div class="col-9">
+                                        <input type="file" class="form-control" id="file"  >
+                                        <span id="erma">*</span>
+                                    </div>
+                                </div>
+
+                                <button type="button" class="btn btn-success btn--submit" id="dangki"> Luu</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+<script src="../JS/de4.js"></script>
+</body>
+
+</html>

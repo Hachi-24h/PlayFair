@@ -1,0 +1,13 @@
+.nav a:hover{
+    background:blue;
+    color: white;
+    border-radius: 10px;
+}
+
+.input-group-prepend input {
+    margin-left: 20px;
+}
+
+.saithuoctinh{
+    border:1px solid red;
+}

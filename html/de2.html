@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>de02</title>
+    <link rel="stylesheet" href="../Css/bootstrap.css">
+    <script src="../JS/jquery-3.6.4.js"></script>
+    <script src="../JS/bootstrap.js"></script>
+    <style>
+        .error{
+            border: 1px solid red;
+        }
+    </style>
+</head>
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <div class="w-100" style="height: 200px;background-color: antiquewhite;">
+            </div>
+        </header>
+        <section style="height: 300px;">
+            <div class="row">
+                <div class="col-2">
+                    <nav>
+                        <ul class="nav flex-column">
+                            <li><a href="">Highlight</a></li>
+                            <li><a href="">Hoạt động</a></li>
+                            <li><a href="">Danh Sách Trường</a></li>
+                            <li><a href="">Ưu Đãi</a></li>
+                            <li><button class="btn btn-primary" type="button" data-toggle="modal" data-target="#form">Đăng kí</button></li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="col-10">
+                    <h2>DANH SÁCH ĐĂNG KÍ TƯ VẤN</h2>
+                    <table class="table table-bordered" id="tb">
+                        <tbody>
+                            <tr>
+                                <th>STT</th>
+                                <th>Họ Tên </th>
+                                <th>Số Điện thoại</th>
+                                <th>Email</th>
+                                <th>Địa chỉ </th>
+                                <th>Năm </th>
+                                <th>Địa điểm tư vấn </th>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+        </section>
+        <footer style=" background-color: antiquewhite;">
+            <h4>21078341_Phan Thanh Nam</h4>
+        </footer>
+        <div class="modal" id="form">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h2>ĐĂNG KÍ THAM DỰ EDUUK MIỄN PHÍ</h2>
+                        <button data-dismiss="modal">X</button>
+                    </div>
+                    <div class="modal-body" style="height: fit-content;">
+                        <form action="">
+                            <!-- Họ tên --->
+                            <div class="form-group">
+                                <input type="text" class="form-control" name="" placeholder="Họ Tên" id="ten">
+                                <span id="erten">(*)</span>
+                            </div>
+
+                            <!-- số điện thoại -->
+                            <div class="form-group">
+                                <input type="text" class="form-control" name="" placeholder="Số điện thoại" id="sdt">
+                                <span id="ersdt">(*)</span>
+                            </div>
+
+                            <!-- Email -->
+                            <div class="form-group">
+                                <input type="text" class="form-control" name="" placeholder="Email"  id="email">
+                                <span id="eremail">(*)</span>
+                            </div>
+                            <div class="form-group">
+                                <input type="text" class="form-control" name=""placeholder="Địa chỉ"   id="diachi">
+                                <span id="erdiachi">(*)</span>
+                            </div>
+                            <div class="form-group">
+                                <div>
+                                    <label for="">Bạn muốn tư vấn ở hà Nôi hay Tp HCM <br></label>
+                                </div>
+                                <div id="dd">
+                                     <input type="radio" name="dd" value="Hà Nội" id=""> 
+                                <label for=""> Hà Nội</label> 
+                                <input type="radio" name="dd" value="tp HCM" id=""> 
+                                <label for=""> Tp HCM</label>
+                                </div> 
+                               
+                                <div>
+                                     <button type="button" class="btn btn-primary" id="dangki">Đăng kí </button>
+                                </div>
+                               
+                            </div>
+                          
+                        </form>
+                    </div>
+                    <div class="modal-footer">
+                        <div>
+                            <h6 class="text-dark text-right">21078341_Phan Thanh Nam</h6>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+ <script src="../JS/de2.js"></script>
+</body>
+
+</html>

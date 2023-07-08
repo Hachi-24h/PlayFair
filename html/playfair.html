@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../Css/bootstrap.css">
+    <script src="../JS/jquery-3.6.4.js"></script>
+    <script src="../JS/bootstrap.js"></script>
+    <title>Playfair</title>
+    <style>
+        .container {
+            border: 2px solid red;
+            width: 80%;
+            height: 50%;
+            box-sizing: border-box;
+            justify-content: center;
+            margin-top: 20%;
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+
+        <div class="row mt-2 mb-3">
+            <label for="" class="col-md-3 text-left " >Mã Khóa </label>
+            <div class="col-md-9">
+                <input type="text" class="form-control" id="khoa" value="hachisama">
+
+            </div>
+        </div>
+        <div class="row mb-2">
+            <label for="" class="col-md-3 text-left ">Mã cần Mã Hóa</label>
+            <div class="col-md-9">
+                <input type="text" class="form-control " id="ma" value="HAMHHI">
+
+            </div>
+        </div>
+        <div  class="mb-4">
+            <tr>
+                <td>
+                    <div class="row ml-1">
+                        <label for="" class="col-md-4 text-center">Mã tách</label>
+                        <div class="col-md-8">
+                            <input type="text" class="form-control text-danger"  id="matach" readonly>
+
+                        </div>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <div class="row ml-1">
+                        <label for="" class="col-md-4 text-center">Kết quả </label>
+                        <div class="col-md-8">
+                            <input type="text" class="form-control text-danger" id="ketqua" readonly>
+                        </div>
+                    </div>
+                </td>
+            </tr>
+          
+
+        </div>
+        <div class="row ml-1 mb-3">
+            <label style="margin-top: 60px;" class="col-md-4 mt-10 text-center">Ma Trận </label>
+           
+                <textarea id="bang" class="text-center ml-3" readonly cols="20" rows="6"></textarea>
+           
+        </div>
+        <div class="mb-3">
+            <button type="button" class="btn btn-primary" id="dangki">Mã Hóa </button>
+        </div>
+    </div>
+    </div>
+    <script src="../JS/playfair.js"></script>
+</body>
+
+</html>

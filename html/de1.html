@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>De01</title>
+    <link rel="stylesheet" href="../Css/bootstrap.css">
+    <script src="../JS/jquery-3.6.4.js"></script>
+    <script src="../JS/bootstrap.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <button data-toggle="modal" data-target="#form">Mod Modal</button>
+
+        <table class="table table-bordered m-3" id="tb">
+
+            <tr>
+                <th>STT</th>
+                <th>Ho ten </th>
+                <th>Ten dang nhap</th>
+                <th>Mat Khau</th>
+            </tr>
+
+        </table>
+
+
+        <div class="modal" id="form" ">
+            <div class=" modal-dialog modal-xl">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h3 class="text-center">ĐĂNG KÍ TÀI KHOẢN</h3>
+                    <button data-dismiss="modal">X</button>
+                </div>
+                <div class="modal-body">
+                    <form action="">
+                        <div class="row">
+                            <label for="" class="col-md-3 text-left">Tên đăng nhập</label>
+                            <div class="col-md-9">
+                                <input type="text" class="form-control" id="name">
+                                <span id="erten">*</span>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <label for="" class="col-md-3 text-left" >Mật Khẩu </label>
+                            <div class="col-md-9">
+                                <input type="password" id="mk" class="form-control">
+                                <span id="ermk">*</span>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <label for="" class="col-md-3 text-left">Nhập lại Mật Khẩu </label>
+                            <div class="col-md-9">
+                                <input type="password" id="nlmk" class="form-control">
+                                <span id="ernlmk">*</span>
+                            </div>
+                        </div>
+
+                        <h3 class="text-center">THÔNG TIN CÁ NHÂN</h3>
+
+                        <div class="row">
+                            <label for="" class="col-md-3 text-left">Họ Tên </label>
+                            <div class="col-md-9">
+                                <input type="text" id="hoten" class="form-control">
+                                <span id="erht">*</span>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <label for="" class="col-md-3 text-right">Ngày Tháng </label>
+                            <div class="col-md-9">
+                                <input type="date" class="form-control">
+                                <span>*</span>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <button type="button" class="btn btn-success btn--submit" id="dangki">Dang ki</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+
+    <script src="../JS/bai1.js"></script>
+</body>
+
+</html>

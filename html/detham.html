@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Đề Thắm</title>
+    <link rel="stylesheet" href="../Css/detham.css">
+    <link rel="stylesheet" href="../Css/bootstrap.css">
+    <script src="../JS/jquery-3.6.4.js"></script>
+    <script src="../JS/bootstrap.js"></script>
+
+</head>
+
+<style>
+
+</style>
+
+<body>
+    <div class="container border">
+        <header>
+            <img src="../Img/tuoitre.jpg" alt="">
+        </header>
+        <nav>
+            
+            <ul class="nav" style="border-top: 1px solid beige;">
+                <a class="nav-link" href="">Trang chủ</a>
+                <a class="nav-link" href="">Tin tức</a>
+                <a class="nav-link" href="">Thể Thao</a>
+                <a class="nav-link" href="" data-toggle="modal" data-target="#form">Đặt báo online </a>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      Dropdown
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                      <a class="dropdown-item" href="#">Action</a>
+                      <a class="dropdown-item" href="#">Another action</a>
+                      <div class="dropdown-divider"></div>
+                      <a class="dropdown-item" href="#">Something else here</a>
+                    </div>
+                  </li>
+            </ul>
+        </nav>
+        
+        <section style="height: 400px;">
+            <table class="table table-borderless " id="tb">
+                <ul>
+                    <th>STT</th>
+                    <th>Loại Báo</th>
+                    <th>Kì Hạn </th>
+                    <th>Đơn Giá</th>
+                    <th>Mã Đọc Sách </th>
+                    <th>Địa chỉ nhận báo</th>
+                    <th>Hình thức thanh toán</th>
+
+                </ul>
+            </table>
+            <div>
+                <h5 class="text-right">Tổng số :<span class="text-danger" id="tong">XXX</span></h5>
+            </div>
+        </section>
+        <footer style="border-top: 1px solid beige;">
+            <h5 class="text-danger text-right">21078341_PhanThanhNam</h5>
+        </footer>
+        <div class="modal" id="form">
+            <div class="modal-dialog ">
+                <div class="modal-content modal-xl">
+                    <div class="modal-header">
+                        <h2>THÔNG TIN KHÁCH HÀNG ĐẶT BÁO ONLINE</h2>
+                        <button data-dismiss="modal">X</button>
+                    </div>
+                    <div class="modal-body">
+                        <form action="">
+                            <div class="form-group">
+                                <p>Đăng kí báo</p>
+                                <div class="input-group-prepend" id="bao">
+                                    <input type="radio" value="Tuổi trẻ hằng ngày " name="loai">Tuổi trẻ hằng ngày <br>
+                                    <input type="radio" value="tuổi trẻ chủ nhật" name="loai"> tuổi trẻ chủ nhật
+                                    <input type="radio" value="tuổi trẻ cười" name="loai"> tuổi trẻ cười
+                                </div>
+                                <span id="erbao">*</span>
+                            </div>
+                            <div class="form-group">
+                                <p>Kì Hạn</p>
+                                <select id="kihan" onchange="ktrakihan" class="btn btn-outline-white w-100 text-center"
+                                    style="border:1px solid rgb(190, 183, 183)">
+                                    <option value="300000">3 tháng</option>
+                                    <option value="500000">6 tháng</option>
+                                    <option value="800000">1 năm</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <p>Đơn Giá</p>
+                                <input type="text" class="form-control" id="dongia" readonly>
+                            </div>
+
+                            <div class="form-group">
+                                <p>Mã đọc Giả</p>
+                                <input type="text" class="form-control" id="name" onblur="checkmdg">
+                                <span id="erten">*</span>
+                            </div>
+
+                            <div class="form-group">
+                                <p>Địa chỉ Nhận báo</p>
+                                <input type="text" class="form-control" id="diachi" onblur="ktradiachi">
+                                <span id="erdiachi">*</span>
+                            </div>
+                            <div class="form-group">
+                                <p>Hình thức thanh toán</p>
+                                <div class="input-group-prepend" id="thanhtoan">
+                                    <input type="radio" value="chuyển khoản" name="pttt">Chuyển Khoản
+                                    <input style="margin-left: 10px;" value="MoMo" type="radio" name="pttt"> MoMo
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <button type="button" class="btn btn-primary btn--submit" id="dangki">Đăng Kí</button>
+                                <button class="btn btn-primary">Hủy</button>
+
+                            </div>
+                        </form>
+
+                    </div>
+                    <div class="modal-footer">
+                        <p class="text-right text-danger">21078341_Phan Thanh Nam</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="../JS/detham.js"></script>
+</body>
+
+</html>
