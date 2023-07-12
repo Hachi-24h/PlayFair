@@ -16,7 +16,7 @@
             height: 50%;
             box-sizing: border-box;
             justify-content: center;
-            margin-top: 20%;
+            margin-top: 40px;
 
         }
     </style>
@@ -26,7 +26,7 @@
     <div class="container">
 
         <div class="row mt-2 mb-3">
-            <label for="" class="col-md-3 text-left " >Mã Khóa </label>
+            <label for="" class="col-md-3 text-left ">Mã Khóa </label>
             <div class="col-md-9">
                 <input type="text" class="form-control" id="khoa" >
 
@@ -39,13 +39,13 @@
 
             </div>
         </div>
-        <div  class="mb-4">
+        <div class="mb-4">
             <tr>
                 <td>
                     <div class="row ml-1">
                         <label for="" class="col-md-4 text-center">Mã tách</label>
                         <div class="col-md-8">
-                            <input type="text" class="form-control text-danger"  id="matach" readonly>
+                            <input type="text" class="form-control text-danger" id="matach" readonly>
 
                         </div>
                     </div>
@@ -61,17 +61,18 @@
                     </div>
                 </td>
             </tr>
-          
+
 
         </div>
         <div class="row ml-1 mb-3">
             <label style="margin-top: 60px;" class="col-md-4 mt-10 text-center">Ma Trận </label>
-           
-                <textarea id="bang" class="text-center ml-3" readonly cols="20" rows="6"></textarea>
-           
+
+            <textarea id="bang" class="text-center ml-5" readonly cols="20" rows="6"></textarea>
+
         </div>
-        <div class="mb-3">
-            <button type="button" class="btn btn-primary" id="dangki">Mã Hóa </button>
+        <div class="mb-3 item-center">
+            <button type="button" class="btn btn-primary" id="mahoa" style="margin-left: 30px;">Mã Hóa </button>
+            <button type="button" class="btn btn-primary ml-5" id="giaima"> Giải Mã </button>
         </div>
     </div>
     </div>
